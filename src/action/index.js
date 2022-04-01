@@ -1,3 +1,4 @@
-const adicionarTarefa = (value) => ({ type: "ADICIONA_ELEMENTO", value });
+// src/actions/index.js
+const adicionarTarefa = (value) => ({ type: "ADD_ELEMENT", value });
 
 export default adicionarTarefa;

@@ -1,12 +1,13 @@
-const ESTADO_INICIAL = [];
+// src/reducers/index.js
+const INITIAL_STATE = [];
 
-const reducerDaLista = (state = ESTADO_INICIAL, action) => {
+function listReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
-    case "ADICIONA_ELEMENTO":
+    case "ADD_ELEMENT":
       return [...state, action.value];
     default:
       return state;
   }
-};
+}
 
-export default reducerDaLista;
+export default listReducer;

@@ -1,11 +1,15 @@
+// src/App.js
 import React from "react";
+import InputsList from "./InputsList";
+import List from "./List";
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1> Deu certo ! </h1>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <InputsList />
+      <List />
+    </div>
+  );
 }
+
+export default App;
